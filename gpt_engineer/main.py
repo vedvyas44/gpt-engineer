@@ -12,7 +12,7 @@ from gpt_engineer.db import DB, DBs
 
 app = typer.Typer()
 
-openai.api_key = os.getenv("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")  # Use environment variable for API key
+openai.api_key = os.getenv("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")  # Use environment variable for API key
 
 @app.command()
 def chat(
