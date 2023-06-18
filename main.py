@@ -1,8 +1,6 @@
-
 import os
 import json
 import pathlib
-import openai
 import typer
 
 from gpt_engineer.chat_to_files import to_files
@@ -10,9 +8,9 @@ from gpt_engineer.ai import AI
 from gpt_engineer.steps import STEPS
 from gpt_engineer.db import DB, DBs
 
+
 app = typer.Typer()
 
-openai.api_key = os.getenv("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")  # Use environment variable for API key
 
 @app.command()
 def chat(
